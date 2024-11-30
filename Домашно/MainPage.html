@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристически гид</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="MainPage.html">Туристически Гид</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">София</a>
+              <a class="nav-link" href="#">Париж</a>
+              <a class="nav-link" href="#">Габрово</a>
+              <a class="nav-link" href="#">За нас</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+
+        <!-- Тест-->
+        <div class="container">
+          <h1 class="text-center my-4">Дестинации</h1>
+          <div class="row g-3">
+            <!-- София -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="Pics/София.jpg" class="card-img-top img-fluid" alt="София">
+                <div class="card-body">
+                  <h5 class="card-title">София</h5>
+                  <p class="card-text">София е столицата на България...</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sofiaModal">Подробности</a>
+                  
+                </div>
+              </div>
+            </div>
+        
+            <!-- Париж -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="Pics/Париж.jpg" class="card-img-top img-fluid" alt="Париж">
+                <div class="card-body">
+                  <h5 class="card-title">Париж</h5>
+                  <p class="card-text">Париж е столицата на Франция...</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ParisModal">Подробности</a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Габрово -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <img src="Pics/Габрово2.jpg" class="card-img-top img-fluid" alt="Габрово">
+                <div class="card-body">
+                  <h5 class="card-title">Габрово</h5>
+                  <p class="card-text">Габрово е столицата на хумора...</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#GabrovoModal">Подробности</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+                  <!--Modal za Sofia-->
+                  <div class="modal fade" id="sofiaModal" tabindex="-1" aria-labelledby="sofiaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="sofiaModalLabel">София</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>София е столицата на България. Тук можете да посетите катедралата "Св. Александър Невски" и много други забележителности.</p>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23513.02065882077!2d23.321867087843013!3d42.69773163595571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa858b2fa4385f%3A0x6c4b7a3c2d6e1c80!2z0JzQvdGC0YDRgNC90LAg0JHQsNGI0LrQsCDQm9GD0YLQsNC60L7Qsiwg0JHQvtC70YzQvdCw!5e0!3m2!1sbg!2sbg!4v1633445631839!5m2!1sbg!2sbg" 
+                                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Затвори</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+        </div>                 
+          <!--Modal Paris-->
+          <div class="modal fade" id="ParisModal" tabindex="-1" aria-labelledby="ParisModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="sofiaModalLabel">Париж</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Париж е столицата на Франция. Не пропускайте Айфеловата кула и музея Лувър.</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21000.00342116761!2d2.2935742721359625!3d48.856614056685175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66efc1e56f9fb%3A0xb8c36edb3c9d8d0c!2sParis%2C%20France!5e0!3m2!1sen!2sbg!4v1633445631839!5m2!1sen!2sbg"
+                          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Затвори</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>       
+                  <!--Gabrovo Modal-->
+                  <div class="modal fade" id="GabrovoModal" tabindex="-1" aria-labelledby="GabrovoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="sofiaModalLabel">Габрово</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Габрово е столицата е столица на хумора. Тук можете да посетите "Домът на Хумора и Сатирата" и много други забележителности.</p>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.6871890098378!2d25.315407175552657!3d42.87944617114941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a91abd68e939c3%3A0xcc219cba07ac5eb2!2z0JzRg9C30LXQuSDigJ7QlNC-0Lwg0L3QsCDRhdGD0LzQvtGA0LAg0Lgg0YHQsNGC0LjRgNCw0YLQsOKAnA!5e0!3m2!1sbg!2sbg!4v1690194297808!5m2!1sbg!2sbg"
+                                  width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Затвори</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+        </div>
+         </div>
+      </div>
+
+    
+  
+      
+</body>
+</html>
